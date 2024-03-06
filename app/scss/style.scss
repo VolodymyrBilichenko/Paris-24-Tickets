@@ -8,14 +8,20 @@
 }
 
 :root {
-  --container: 1280px;
+  --container: 1532px;
 
-  --black: #363636;
-  --blue: #2980B9;
-  --blue-opacity: rgba(203, 234, 255, 0.88);
-  --white: #FFF;
-  --white-opacity: rgba(255, 255, 255, 0.88);
-  --border: #E0E0E0;
+  --black: #303030;
+  --d-grey: #4D4D4D;
+  --grey: #717171;
+  --l-grey: a2a2a2;
+  --xl-grey: #c7c7c7;
+  --silver: #ececec;
+  --white: #ffffff;
+
+  --primary: #022366;
+  --secondary: #fba9cb;
+  --accent: #d7c378;
+
 }
 
 body {
@@ -79,7 +85,6 @@ button {
 img {
   display: block;
   width: 100%;
-  height: 100%;
 }
 
 input,
@@ -106,3 +111,114 @@ select {
 }
 
 
+.header{
+  position: fixed;
+  top: 15px;
+  width: 100%;
+
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo{
+    max-width: 200px;
+  }
+
+  &__burger{
+    max-width: 43px;
+  }
+}
+
+.banner{
+  background: url(../img/banner-bgd-mob.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 85px 0 110px;
+
+  h2{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--white);
+  }
+
+  p{
+    font-family: 600;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 31px;
+  }
+
+  form{
+    width: 100%;
+    max-width: 365px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    input{
+      background: var(--white);
+      border: 1px solid var(--white);
+      background-image: url(../img/icon/loop.svg);
+      background-size: 40px 40px;
+      background-repeat: no-repeat;
+      background-position: 18px 30px;
+      padding: 9px 13px 9px 58px;
+      width: 100%;
+      font-size: 13px;
+      line-height: 30px;
+      color: var(--grey);
+      border-radius: 11px;
+
+      &::placeholder{
+        font-size: 13px;
+        line-height: 30px;
+        color: var(--grey);
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background: url(../img/banner-bgd.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 257px 0 327px;
+
+    h2{
+      font-size: 45px;
+      margin-bottom: 40px;
+      line-height: 43px;
+    }
+  
+    p{
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 59px;
+    }
+
+    form{
+      max-width: 835px;
+
+      input{
+        background-size: initial;
+        background-position: 25px 12px;
+        padding: 18px 18px 18px 75px;
+        border-radius: 20px;
+        border: 2px solid var(--white);
+        font-size: 16px;
+        line-height: 30px;
+  
+        &::placeholder{
+          font-size: 16px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
