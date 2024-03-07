@@ -7,6 +7,22 @@ CarteItem.forEach(item => {
     })
 })
 
+//header scrolled
+
+let header = document.querySelector(".header");
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", function() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        header.classList.add("scrolled");
+    } else if (scrollTop <= 0) {
+        header.classList.remove("scrolled");
+    }
+    lastScrollTop = scrollTop;
+});
+
 //banner menu mob
 
 const MenuMob = document.querySelector('.menu__more');

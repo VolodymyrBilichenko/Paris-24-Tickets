@@ -131,6 +131,13 @@ select {
   top: 15px;
   width: 100%;
   z-index: 5;
+  transition: all .3s ease;
+  padding: 10px 0;
+
+  &.scrolled{
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+  }
 
   &__inner{
     display: flex;

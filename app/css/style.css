@@ -295,7 +295,15 @@ textarea {
   position: fixed;
   top: 15px;
   width: 100%;
-  z-index: 5
+  z-index: 5;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  padding: 10px 0
+}
+.header.scrolled {
+  background: rgba(0,0,0,.5);
+  top: 0
 }
 .header__inner {
   display: -webkit-box;
