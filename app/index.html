@@ -21,14 +21,74 @@
 <header class="header">
     <div class="container">
         <div class="header__inner">
-            <img class="header__logo" src="./img/icon/logotype.svg" alt="logo ic">
+            <a href="index.html">
+                <img class="header__logo" src="./img/icon/logotype.svg" alt="logo ic">
+            </a>
             <img class="header__burger" src="./img/icon/burger.svg" alt="burger ic">
+            <div class="carte">
+                <div class="carte__item">
+                    <div class="carte__item__head">
+                        <img class="flag__ic" src="./img/icon/flag/flag-usa.svg" alt="usa flag ic">
+                        <span>English</span>
+                        <svg class="arrow__ic" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z"/>
+                        </svg>
+                    </div>
+                    <ul class="carte__item__body">
+                        <li>
+                            <a class="active" href="#">
+                                <img src="./img/icon/flag/flag-usa.svg" alt="usa flag ic">
+                                English
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="#">
+                                <img src="./img/icon/flag/flag__french.svg" alt="usa flag ic">
+                                French
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="#">
+                                <img src="./img/icon/flag/flag__germany.svg" alt="usa flag ic">
+                                Germany
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="carte__item">
+                    <div class="carte__item__head">
+                        <span>Euro (€)</span>
+                        <svg class="arrow__ic" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z"/>
+                        </svg>
+                    </div>
+                    <ul class="carte__item__body money">
+                        <li>
+                            <a class="active" href="#">
+                                Euro (€)
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="#">
+                                GB Pound (£)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="carte__login">
+                    Login
+                </a>
+                <a href="#" class="carte__sell">
+                    <img src="./img/icon/ticket-small.png" alt="ticket ic">
+                    Sell Tickets
+                </a>
+            </div>
         </div>
     </div>
 </header>
 
 <main>
-    <div class="banner">
+    <section class="banner">
         <div class="container">
             <h2>
                 Sell your Paris 2024 Olympics Tickets!
@@ -40,13 +100,460 @@
                 <input type="text" placeholder="Search for an event, venue, or city">
                 <!-- <img src="./img/icon/loop.svg" alt="loop ic"> -->
             </form>
+
+            <ul class="banner__menu">
+                <li>
+                    <a href="#" class="active">
+                        <img src="./img/icon/banner-menu/Home.svg" alt="menu ic">
+                        <span>
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/banner-menu/swimming.png" alt="menu ic">
+                        <span>
+                            Swimming
+                        </span>                
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/banner-menu/archery.png" alt="menu ic">
+                        <span>
+                            Archery
+                        </span>                    
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/banner-menu/athletic.png" alt="menu ic">
+                        <span>
+                            Athletics
+                        </span>                        
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/banner-menu/football.png" alt="menu ic">
+                        <span>
+                            Football
+                        </span>                        
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/banner-menu/golf.png" alt="menu ic">
+                        <span>
+                            Golf
+                        </span>                    
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/banner-menu/regby.png" alt="menu ic">
+                        <span>
+                            Rugby
+                        </span>                        
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/banner-menu/saling.png" alt="menu ic">
+                        <span>
+                            Sailing
+                        </span>                        
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icon/banner-menu/surfing.png" alt="menu ic">
+                        <span>
+                            Surfing
+                        </span>                        
+                    </a>
+                </li>
+            </ul>
+            <div class="banner__menu_mob">
+                <a href="#" class="banner__menu_mob__item active">
+                    <img src="./img/icon/banner-menu/Home.svg" alt="home ic">
+                    Home
+                </a>
+                <a href="#" class="banner__menu_mob__item">
+                    <img src="./img/icon/banner-menu/swimming.png" alt="swim ic">
+                    Swimming
+                </a>
+                <div class="menu__more">
+                    <img src="./img/icon/banner-menu/more_vert.svg" alt="more ic">
+                </div>
+                <ul class="menu__more__body">
+                   <li>
+                        <a href="#">
+                            <img src="./img/icon/banner-menu/archery.png" alt="menu ic">
+                            Archery
+                        </a>
+                   </li>
+                   <li>
+                        <a href="#">
+                            <img src="./img/icon/banner-menu/athletic.png" alt="menu ic">
+                            Athletics
+                        </a>
+                    </li>
+                   <li>
+                        <a href="#">
+                            <img src="./img/icon/banner-menu/football.png" alt="menu ic">
+                            Football
+                        </a>
+                    </li>
+                   <li>
+                        <a href="#">
+                            <img src="./img/icon/banner-menu/golf.png" alt="menu ic">
+                            Golf
+                        </a>
+                    </li>
+                   <li>
+                        <a href="#">
+                            <img src="./img/icon/banner-menu/regby.png" alt="menu ic">
+                            Rugby
+                        </a>
+                    </li>
+                   <li>
+                        <a href="#">
+                            <img src="./img/icon/banner-menu/saling.png" alt="menu ic">
+                            Sailing
+                        </a>
+                    </li>
+                   <li>
+                        <a href="#">
+                            <img src="./img/icon/banner-menu/surfing.png" alt="menu ic">
+                            Surfing
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section class="main">
+        <div class="container">
+            <h2>
+                Top Events
+            </h2>
+            <ul class="main__list">
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-1.jpg" alt="main bg ph">
+                        <span>
+                            UEFA Champions League 2023/2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-2.jpg" alt="main bg ph">
+                        <span>
+                            Real Madrid 2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-3.jpg" alt="main bg ph">
+                        <span>
+                            Arsenal FC 2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-4.jpg" alt="main bg ph">
+                        <span>
+                            Rugby Six Nations 2023
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-5.jpg" alt="main bg ph">
+                        <span>
+                            Liverpool FC 2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-6.jpg" alt="main bg ph">
+                        <span>
+                            Manchester City 2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-7.jpg" alt="main bg ph">
+                        <span>
+                            French Open Roland Garros 2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-8.jpg" alt="main bg ph">
+                        <span>
+                            Manchester United 2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-9.jpg" alt="main bg ph">
+                        <span>
+                            UEFA Euro 2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-10.jpg" alt="main bg ph">
+                        <span>
+                            Chelsea FC 2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-1.jpg" alt="main bg ph">
+                        <span>
+                            UEFA Champions League 2023/2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-2.jpg" alt="main bg ph">
+                        <span>
+                            Real Madrid 2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-3.jpg" alt="main bg ph">
+                        <span>
+                            Arsenal FC 2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-4.jpg" alt="main bg ph">
+                        <span>
+                            Rugby Six Nations 2023
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-5.jpg" alt="main bg ph">
+                        <span>
+                            Liverpool FC 2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-6.jpg" alt="main bg ph">
+                        <span>
+                            Manchester City 2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-7.jpg" alt="main bg ph">
+                        <span>
+                            French Open Roland Garros 2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-8.jpg" alt="main bg ph">
+                        <span>
+                            Manchester United 2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-9.jpg" alt="main bg ph">
+                        <span>
+                            UEFA Euro 2024
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/main/main-10.jpg" alt="main bg ph">
+                        <span>
+                            Chelsea FC 2024
+                        </span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">
     <div class="container">
-        
+        <div class="footer__inner">
+            <div class="footer__block">
+                <h2>
+                    Safe and secure
+                </h2>
+                <ul>
+                    <li>
+                        <img src="./img/succes.png" alt="icon">
+                        <p>
+                            Buying 100% safe, only from approvals sellers.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./img/hand.png" alt="icon">
+                        <p>
+                            Best Customer service before and after purchasing.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./img/card.png" alt="icon">
+                        <p>
+                            100% secure payment system.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__block">
+                <h2>
+                    SEATSNET COMPANY
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            News
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Help Center
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            News
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contact Seatsnet
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Affiliates
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Careers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Gift Cards
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__block">
+                <h2>
+                    MOST POPULAR EVENTS
+                </h2>
+                <div class="footer__block__con">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Liverpool FC
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Arsenal
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Manchester United
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Chelsea
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Tottenham
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Manchester City
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                FC Barcelona
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Real Madrid
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Champions League
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Uefa Europa League
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Juventus FC
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Paris Saint German
+                            </a>
+                        </li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
     </div>
 </footer>
 
