@@ -67,6 +67,15 @@ main {
 	display: flex;
 	align-items: center;
 	height: 100%;
+	gap: 12px;
+	input{
+		width: 100%;
+		margin-right: -28px;
+		height: 100%;
+	}
+	img, svg{
+		width: 25px;
+	}
 	.arrow {
 		border-left: 1px solid var(--primary);
 		padding-left: 6px;
@@ -368,6 +377,7 @@ main {
 					top: 90px;
 					position: sticky;
 					display: flex;
+					background: var(--white);
 				}
 			}
 		}
@@ -407,6 +417,7 @@ main {
 			width: 100%;
 			padding: 20px 33px;
 			border-radius: 10px;
+			background: var(--white);
 
 			@media screen and (max-width: 576px) {
 				padding: 20px 14px;
