@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Proj</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Website">
+	<meta name="keywords" content="Website">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+	<!-- ** STYLE ** -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/nouislider.css">
+	<link rel="stylesheet" href="css/flipdown.min.css" />
+
+	<link rel="stylesheet" href="css/event-page.css">
+	<link rel="stylesheet" href="css/checkout-page.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<!-- Fav-icon -->
+	<!-- <link rel="icon" type="image/png" href="./img/fav.ico"> -->
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a href="index.html">
+					<img class="header__logo" src="./img/icon/logotype.svg" alt="logo ic">
+				</a>
+				<img class="header__burger" src="./img/icon/burger.svg" alt="burger ic">
+				<div class="carte">
+					<div class="carte__item">
+						<div class="carte__item__head">
+							<img class="flag__ic" src="./img/icon/flag/flag-usa.svg" alt="usa flag ic">
+							<span>English</span>
+							<svg class="arrow__ic" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z"/>
+							</svg>
+						</div>
+						<ul class="carte__item__body">
+							<li>
+								<a class="active" href="#">
+									<img src="./img/icon/flag/flag-usa.svg" alt="usa flag ic">
+									English
+								</a>
+							</li>
+							<li>
+								<a  href="#">
+									<img src="./img/icon/flag/flag__french.svg" alt="usa flag ic">
+									French
+								</a>
+							</li>
+							<li>
+								<a  href="#">
+									<img src="./img/icon/flag/flag__germany.svg" alt="usa flag ic">
+									Germany
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="carte__item">
+						<div class="carte__item__head">
+							<span>Euro (€)</span>
+							<svg class="arrow__ic" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z"/>
+							</svg>
+						</div>
+						<ul class="carte__item__body money">
+							<li>
+								<a class="active" href="#">
+									Euro (€)
+								</a>
+							</li>
+							<li>
+								<a  href="#">
+									GB Pound (£)
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="carte__login">
+						Login
+					</a>
+					<a href="#" class="carte__sell">
+						<img src="./img/icon/ticket-small.png" alt="ticket ic">
+						Sell Tickets
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="checkout-page">
+		<section class="banner">
+			<div class="container">
+				<h2>
+					Sell your Paris 2024 Olympics Tickets!
+				</h2>
+				<p>
+					Discover a curated selection of tickets for Football, Athletics, Rugby, Golf, Swimming, and more.
+				</p>
+				<form action="#">
+					<input type="text" placeholder="Search for an event, venue, or city">
+					<!-- <img src="./img/icon/loop.svg" alt="loop ic"> -->
+				</form>
+
+				<ul class="banner__menu">
+					<li>
+						<a href="#" class="active">
+							<img src="./img/icon/banner-menu/Home.svg" alt="menu ic">
+							<span>
+								Home
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="./img/icon/banner-menu/swimming.png" alt="menu ic">
+							<span>
+								Swimming
+							</span>                
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="./img/icon/banner-menu/archery.png" alt="menu ic">
+							<span>
+								Archery
+							</span>                    
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="./img/icon/banner-menu/athletic.png" alt="menu ic">
+							<span>
+								Athletics
+							</span>                        
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="./img/icon/banner-menu/football.png" alt="menu ic">
+							<span>
+								Football
+							</span>                        
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="./img/icon/banner-menu/golf.png" alt="menu ic">
+							<span>
+								Golf
+							</span>                    
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="./img/icon/banner-menu/regby.png" alt="menu ic">
+							<span>
+								Rugby
+							</span>                        
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="./img/icon/banner-menu/saling.png" alt="menu ic">
+							<span>
+								Sailing
+							</span>                        
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="./img/icon/banner-menu/surfing.png" alt="menu ic">
+							<span>
+								Surfing
+							</span>                        
+						</a>
+					</li>
+				</ul>
+				<div class="banner__menu_mob">
+					<a href="#" class="banner__menu_mob__item active">
+						<img src="./img/icon/banner-menu/Home.svg" alt="home ic">
+						Home
+					</a>
+					<a href="#" class="banner__menu_mob__item">
+						<img src="./img/icon/banner-menu/swimming.png" alt="swim ic">
+						Swimming
+					</a>
+					<div class="menu__more">
+						<img src="./img/icon/banner-menu/more_vert.svg" alt="more ic">
+					</div>
+					<ul class="menu__more__body">
+						<li>
+							<a href="#">
+								<img src="./img/icon/banner-menu/archery.png" alt="menu ic">
+								Archery
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/icon/banner-menu/athletic.png" alt="menu ic">
+								Athletics
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/icon/banner-menu/football.png" alt="menu ic">
+								Football
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/icon/banner-menu/golf.png" alt="menu ic">
+								Golf
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/icon/banner-menu/regby.png" alt="menu ic">
+								Rugby
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/icon/banner-menu/saling.png" alt="menu ic">
+								Sailing
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./img/icon/banner-menu/surfing.png" alt="menu ic">
+								Surfing
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="main">
+			<div class="container">
+
+				<div class="breadcrumbs">
+					<a href="#">Home</a>
+					<span>Checkout</span>
+				</div>
+
+				<div class="checkout">
+					<div class="checkout__header">
+						<h1 class="title-h1">Your order details</h1>
+					</div>
+					<div class="checkout__form">
+						
+						<div class="form__lft">
+							<div class="attention">
+								<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M26.625 13.5C26.625 20.7487 20.7487 26.625 13.5 26.625C6.25126 26.625 0.375 20.7487 0.375 13.5C0.375 6.25126 6.25126 0.375 13.5 0.375C20.7487 0.375 26.625 6.25126 26.625 13.5ZM14.9583 7.66667C14.9583 8.47208 14.3054 9.125 13.5 9.125C12.6946 9.125 12.0417 8.47208 12.0417 7.66667C12.0417 6.86125 12.6946 6.20833 13.5 6.20833C14.3054 6.20833 14.9583 6.86125 14.9583 7.66667ZM14.5 20.7917V12.0417H12.5V20.7917H14.5Z" fill="#E53835"/>
+								</svg>
+								<span>Please note that these tickets may not be available at this price if you release them</span>
+							</div>
+							<div class="order__item inner-block">
+								<div class="item__photo">
+									<img src="./img/icon/tickets.png" alt="">
+								</div>
+								<div class="item__info">
+									<div class="item__liga">
+										Spanish La Liga
+									</div>
+									<h2 class="item__title">
+										Spanish La Liga
+									</h2>
+									<div class="item__location">
+										Santiago Bernabeu, <span>Madrid, Spain</span>
+									</div>
+									<div class="item__time">
+										<div class="header__date">
+											<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7 4.51833C6.46047 4.54114 6.07192 4.59237 5.72883 4.70736C4.53947 5.10599 3.60599 6.03947 3.20736 7.22883C3 7.8475 3 8.61402 3 10.1471C3 10.2429 3 10.2908 3.01296 10.3294C3.03787 10.4038 3.09622 10.4621 3.17055 10.487C3.20922 10.5 3.25713 10.5 3.35294 10.5H20.6471C20.7429 10.5 20.7908 10.5 20.8294 10.487C20.9038 10.4621 20.9621 10.4038 20.987 10.3294C21 10.2908 21 10.2429 21 10.1471C21 8.61402 21 7.8475 20.7926 7.22883C20.394 6.03947 19.4605 5.10599 18.2712 4.70736C17.9281 4.59237 17.5395 4.54114 17 4.51833L17 7C17 7.82843 16.3284 8.5 15.5 8.5C14.6716 8.5 14 7.82843 14 7L14 4.5H10L10 7C10 7.82843 9.32843 8.5 8.50001 8.5C7.67158 8.5 7 7.82843 7 7L7 4.51833Z" fill="#022366"/>
+												<path d="M3 12C3 11.7643 3 11.6464 3.07322 11.5732C3.14645 11.5 3.2643 11.5 3.5 11.5H20.5C20.7357 11.5 20.8536 11.5 20.9268 11.5732C21 11.6464 21 11.7643 21 12V12.5C21 16.2712 21 18.1569 19.8284 19.3284C18.6569 20.5 16.7712 20.5 13 20.5H11C7.22876 20.5 5.34315 20.5 4.17157 19.3284C3 18.1569 3 16.2712 3 12.5V12Z" fill="#022366"/>
+												<path d="M8.5 3L8.5 7" stroke="#022366" stroke-linecap="round"/>
+												<path d="M15.5 3L15.5 7" stroke="#022366" stroke-linecap="round"/>
+											</svg>
+											<span>10 February 2024</span>
+										</div>
+										<div class="header__time">
+											<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5 4.5L3 6.5" stroke="#022366" stroke-width="2" stroke-linecap="round"/>
+												<path d="M19 4.5L21 6.5" stroke="#022366" stroke-width="2" stroke-linecap="round"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 16.9183 7.58172 20.5 12 20.5ZM14.7809 10.6247C15.1259 10.1934 15.056 9.56414 14.6247 9.21913C14.1934 8.87412 13.5641 8.94404 13.2191 9.37531L11.7919 11.1594L9.5547 9.66795C9.09517 9.3616 8.4743 9.48577 8.16795 9.9453C7.8616 10.4048 7.98577 11.0257 8.4453 11.3321L11.2546 13.2049C11.7941 13.5646 12.519 13.452 12.9241 12.9457L14.7809 10.6247Z" fill="#022366"/>
+											</svg>
+											<span>18:30</span>
+										</div>
+									</div>
+									<div class="item__mini-info">
+										<div class="lft">
+											<div class="lft__item">
+												<strong>Section:</strong>
+											<span>Fondo Norte Bajo</span>
+											</div>
+											<div class="lft__item">
+												<strong>Similar or Upgrade</strong>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<circle cx="12" cy="12" r="9" stroke="#717171" stroke-width="2"/>
+													<path d="M12.5 7.5C12.5 7.77614 12.2761 8 12 8C11.7239 8 11.5 7.77614 11.5 7.5C11.5 7.22386 11.7239 7 12 7C12.2761 7 12.5 7.22386 12.5 7.5Z" fill="#717171" stroke="#717171"/>
+													<path d="M12 17V10" stroke="#717171" stroke-width="2"/>
+												</svg>
+											</div>
+										</div>
+										<div class="rht">
+											<div class="rht__item">
+												<strong>Notes:</strong>
+											</div>
+											<div class="rht__item">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<circle cx="12" cy="12" r="3.5" stroke="#303030"/>
+													<path d="M20.188 10.9343C20.5762 11.4056 20.7703 11.6412 20.7703 12C20.7703 12.3588 20.5762 12.5944 20.188 13.0657C18.7679 14.7899 15.6357 18 12 18C8.36427 18 5.23206 14.7899 3.81197 13.0657C3.42381 12.5944 3.22973 12.3588 3.22973 12C3.22973 11.6412 3.42381 11.4056 3.81197 10.9343C5.23206 9.21014 8.36427 6 12 6C15.6357 6 18.7679 9.21014 20.188 10.9343Z" stroke="#303030"/>
+												</svg>
+												<span>UNRESTRICTED VIEW</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="item__price">
+										<ul>
+											<li>
+												<span>Number of tickets</span>
+												<span>1</span>
+											</li>
+											<li>
+												<span>Ticket price</span>
+												<span>
+													1 x <strong>€61.06</strong>
+												</span>
+											</li>
+											<li class="line">
+												&nbsp
+											</li>
+											<li>
+												<span>*Not include: Handling Free and Delivery Free</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="timer-mob">
+								<div class="time">
+									<span>This ticket will no longer be reserved in:</span>
+									<div id="flipdown-mob" class="flipdown-mob"></div>
+								</div>
+							</div>
+							<div class="inner-title">
+								<h3>
+									Customer Information
+								</h3>
+
+								<div class="buttons">
+									<input type="radio" checked name="account" id="1">
+									<label for="1">
+										I am a new customer
+									</label>
+									<input type="radio" name="account" id="2">
+									<label for="2">
+										I have an account
+									</label>
+								</div>
+							</div>
+							<div class="inner-block">
+								<p class="fields-attention">
+									<strong>
+										Almost done! Just fill in the <span class="_red">*required</span> info to secure your tickets.
+									</strong>
+								</p>
+
+								<div class="fields">
+									<label>
+										<span class="label__title">First name*</span>
+										<input type="text" required placeholder="First name">
+									</label>
+									<label>
+										<span class="label__title">Last name*</span>
+										<input type="text" required placeholder="Last name">
+									</label>
+									<label>
+										<span class="label__title">Email*</span>
+										<input type="email" required placeholder="First name">
+									</label>
+									<label>
+										<span class="label__title">Password*</span>
+										<input type="password" required placeholder="Password">
+									</label>
+									<label>
+										<span class="label__title">Area code*</span>
+										<input type="text" required placeholder="Area code">
+									</label>
+									<label>
+										<span class="label__title">Confirm password*</span>
+										<input type="password" required placeholder="Confirm password">
+									</label>
+									<label>
+										<span class="label__title">Phone/Mobile*</span>
+										<input type="text" required placeholder="Phone/Mobile">
+									</label>
+									<label>
+										<span class="label__title">Address*</span>
+										<input type="text" required placeholder="Address">
+									</label>
+									<label>
+										<span class="label__title">Zip/Postal code*</span>
+										<input type="text" required placeholder="Zip/Postal code">
+									</label>
+									<label class="clear-label">
+										<span class="label__title">Country*</span>
+										<span class="input input-select">
+											<input list="count" type="text" placeholder="Select country">
+											<datalist id="count">
+												<option value="2"></option>
+												<option value="3"></option>
+												<option value="4"></option>
+											</datalist>
+											<span class="arrow">
+												<svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.7625 0.5L7.5 6.06275L13.2375 0.5L15 2.21255L7.5 9.5L0 2.21255L1.7625 0.5Z" fill="#022366"/>
+												</svg>
+											</span>
+										</span>
+									</label>
+									<label class="clear-label">
+										<span class="label__title">State/Province</span>
+										<span class="input input-select">
+											<input list="State" type="text" placeholder="State/Province">
+											<datalist id="State">
+												<option value="2"></option>
+												<option value="3"></option>
+												<option value="4"></option>
+											</datalist>
+											<span class="arrow">
+												<svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.7625 0.5L7.5 6.06275L13.2375 0.5L15 2.21255L7.5 9.5L0 2.21255L1.7625 0.5Z" fill="#022366"/>
+												</svg>
+											</span>
+										</span>
+									</label>
+									<label class="clear-label">
+										<span class="label__title">City*</span>
+										<span class="input input-select">
+											<input list="City" type="text" placeholder="City">
+											<datalist id="City">
+												<option value="2"></option>
+												<option value="3"></option>
+												<option value="4"></option>
+											</datalist>
+											<span class="arrow">
+												<svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.7625 0.5L7.5 6.06275L13.2375 0.5L15 2.21255L7.5 9.5L0 2.21255L1.7625 0.5Z" fill="#022366"/>
+												</svg>
+											</span>
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="inner-title">
+								<h3>
+									Choose Delivery Option
+								</h3>
+							</div>
+							<div class="inner-block form__additional">
+								<p>
+									<strong>
+										Lucky you! You selected the value for money tickets. <span class="_green">Don’t miss our best price - book now!</span>
+									</strong>
+								</p>
+								<div class="bottom">
+									<div class="checkbox custom-checkbox">
+										<input type="checkbox" id="eticket">
+										<label for="eticket">E-Tickets (by Email)</label>
+									</div>
+									<div class="free">
+										Free shipping
+									</div>
+								</div>
+							</div>
+							<div class="inner-title">
+								<h3>
+									Delivery Details
+								</h3>
+							</div>
+							<div class="inner-block form__additional">
+								<p>
+									<strong>
+										Lucky you! You selected the value for money tickets. <span class="_green">Don’t miss our best price - book now!</span>
+									</strong>
+								</p>
+								<div class="bottom">
+									<div class="checkbox custom-checkbox">
+										<input type="checkbox" id="eticket1">
+										<label for="eticket1">E-Tickets (by Email)</label>
+									</div>
+									<div class="free">
+										Free shipping
+									</div>
+								</div>
+							</div>
+							<div class="inner-title">
+								<h4>
+									You can leave us a comment here
+								</h4>
+							</div>
+							<textarea name="" placeholder="Comment..." id="" cols="30" rows="10"></textarea>
+							<div class="form__checkbox custom-checkbox">
+								<input type="checkbox" id="checkbox">
+								<label for="checkbox">
+									Don't miss out our hottest deals and more of your favorites events to be sent to your inbox. <br>By opting in, you consent to receiving emails about upcoming events and special offers in a accordance with our privacy policy.
+								</label>
+							</div>
+							<div class="form__send">
+								<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M7.25368 11.5037C6.375 12.3824 6.375 13.7966 6.375 16.625V34.375C6.375 37.2034 6.375 38.6176 7.25368 39.4963C8.13236 40.375 9.54657 40.375 12.375 40.375H38.625C41.4534 40.375 42.8676 40.375 43.7463 39.4963C44.625 38.6176 44.625 37.2034 44.625 34.375V16.625C44.625 13.7966 44.625 12.3824 43.7463 11.5037C42.8676 10.625 41.4534 10.625 38.625 10.625H12.375C9.54657 10.625 8.13236 10.625 7.25368 11.5037ZM13.3047 18.2929C12.8452 17.9866 12.2243 18.1108 11.9179 18.5703C11.6116 19.0298 11.7358 19.6507 12.1953 19.9571L24.3906 28.0872C25.0624 28.5351 25.9376 28.5351 26.6094 28.0872L38.8047 19.9571C39.2642 19.6507 39.3884 19.0298 39.0821 18.5703C38.7757 18.1108 38.1548 17.9866 37.6953 18.2929L25.5 26.4231L13.3047 18.2929Z" fill="#022366"/>
+								</svg>
+								<p>We’ll send you instant confirmation.</p>
+							</div>
+							<button type="submit">
+								<img src="./img/icon/protect.png" alt="" width="30">
+								<span>Make Secure Payment Now</span>
+							</button>
+						</div>
+						<aside class="form__rht">
+							<div class="time">
+								<span>This ticket will no longer be reserved in:</span>
+								<div id="flipdown" class="flipdown"></div>
+							</div>
+
+							<div class="about aside-block">
+								<h3>WHY BOOK WITH paris 24 tickets?</h3>
+								<ul>
+									<li>
+										<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 27.125C21.9203 27.125 27.125 21.9203 27.125 15.5C27.125 9.07969 21.9203 3.875 15.5 3.875C9.07969 3.875 3.875 9.07969 3.875 15.5C3.875 21.9203 9.07969 27.125 15.5 27.125ZM14.9766 20.0152L21.4349 12.2652L19.8984 10.9848L14.1411 17.8936L11.0404 14.7929L9.62623 16.2071L13.5012 20.0821L14.2755 20.8564L14.9766 20.0152Z" fill="#D7C378"/>
+										</svg>
+										<span>Tickets listing only by <strong><i>trusted sellers.</i></strong></span>
+									</li>
+									<li>
+										<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 27.125C21.9203 27.125 27.125 21.9203 27.125 15.5C27.125 9.07969 21.9203 3.875 15.5 3.875C9.07969 3.875 3.875 9.07969 3.875 15.5C3.875 21.9203 9.07969 27.125 15.5 27.125ZM14.9766 20.0152L21.4349 12.2652L19.8984 10.9848L14.1411 17.8936L11.0404 14.7929L9.62623 16.2071L13.5012 20.0821L14.2755 20.8564L14.9766 20.0152Z" fill="#D7C378"/>
+										</svg>
+										<span>Sellers Guaranteed original tickets.</span>
+									</li>
+									<li>
+										<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 27.125C21.9203 27.125 27.125 21.9203 27.125 15.5C27.125 9.07969 21.9203 3.875 15.5 3.875C9.07969 3.875 3.875 9.07969 3.875 15.5C3.875 21.9203 9.07969 27.125 15.5 27.125ZM14.9766 20.0152L21.4349 12.2652L19.8984 10.9848L14.1411 17.8936L11.0404 14.7929L9.62623 16.2071L13.5012 20.0821L14.2755 20.8564L14.9766 20.0152Z" fill="#D7C378"/>
+										</svg>
+										<span>Receive your tickets on time.</span>
+									</li>
+									<li>
+										<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 27.125C21.9203 27.125 27.125 21.9203 27.125 15.5C27.125 9.07969 21.9203 3.875 15.5 3.875C9.07969 3.875 3.875 9.07969 3.875 15.5C3.875 21.9203 9.07969 27.125 15.5 27.125ZM14.9766 20.0152L21.4349 12.2652L19.8984 10.9848L14.1411 17.8936L11.0404 14.7929L9.62623 16.2071L13.5012 20.0821L14.2755 20.8564L14.9766 20.0152Z" fill="#D7C378"/>
+										</svg>
+										<span>Real Time ongoing tickets availability.</span>
+									</li>
+									<li>
+										<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 27.125C21.9203 27.125 27.125 21.9203 27.125 15.5C27.125 9.07969 21.9203 3.875 15.5 3.875C9.07969 3.875 3.875 9.07969 3.875 15.5C3.875 21.9203 9.07969 27.125 15.5 27.125ZM14.9766 20.0152L21.4349 12.2652L19.8984 10.9848L14.1411 17.8936L11.0404 14.7929L9.62623 16.2071L13.5012 20.0821L14.2755 20.8564L14.9766 20.0152Z" fill="#D7C378"/>
+										</svg>
+										<span>Excellent customer service.</span>
+									</li>
+									<li>
+										<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 27.125C21.9203 27.125 27.125 21.9203 27.125 15.5C27.125 9.07969 21.9203 3.875 15.5 3.875C9.07969 3.875 3.875 9.07969 3.875 15.5C3.875 21.9203 9.07969 27.125 15.5 27.125ZM14.9766 20.0152L21.4349 12.2652L19.8984 10.9848L14.1411 17.8936L11.0404 14.7929L9.62623 16.2071L13.5012 20.0821L14.2755 20.8564L14.9766 20.0152Z" fill="#D7C378"/>
+										</svg>
+										<span>Secure payment</span>
+									</li>
+									<li>
+										<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 27.125C21.9203 27.125 27.125 21.9203 27.125 15.5C27.125 9.07969 21.9203 3.875 15.5 3.875C9.07969 3.875 3.875 9.07969 3.875 15.5C3.875 21.9203 9.07969 27.125 15.5 27.125ZM14.9766 20.0152L21.4349 12.2652L19.8984 10.9848L14.1411 17.8936L11.0404 14.7929L9.62623 16.2071L13.5012 20.0821L14.2755 20.8564L14.9766 20.0152Z" fill="#D7C378"/>
+										</svg>
+										<span>In Business since 2004</span>
+									</li>
+								</ul>
+							</div>
+							<div class="info aside-block">
+								<h3>SPECIAL INFO</h3>
+								<ul>
+									<li>
+										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16ZM17.3333 10.6667C17.3333 11.403 16.7364 12 16 12C15.2636 12 14.6667 11.403 14.6667 10.6667C14.6667 9.93029 15.2636 9.33333 16 9.33333C16.7364 9.33333 17.3333 9.93029 17.3333 10.6667ZM17 22.6667V14.6667H15V22.6667H17Z" fill="#E53835"/>
+										</svg>
+										<span>Prices are increasing!</span>
+									</li>
+									<li>
+										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16ZM17.3333 10.6667C17.3333 11.403 16.7364 12 16 12C15.2636 12 14.6667 11.403 14.6667 10.6667C14.6667 9.93029 15.2636 9.33333 16 9.33333C16.7364 9.33333 17.3333 9.93029 17.3333 10.6667ZM17 22.6667V14.6667H15V22.6667H17Z" fill="#E53835"/>
+										</svg>
+										<span>Limit supply for this event. Some blocks are sold out already.</span>
+									</li>
+								</ul>
+							</div>
+							<div class="contacts aside-block">
+								<h3>Need help? Contact us</h3>
+								<div class="phone">
+									<img src="./img/icon/whatsapp.png" width="36" alt="">
+									<span>WhatsApp</span>
+									<a href="tel:+441416731882">+4 (414) 16 - 731 - 882</a>
+								</div>
+								<a href="mailto:sales@paris24.com" class="email">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.00106 11.8112C4 12.0811 4 12.3659 4 12.6667V19.3334C4 22.1618 4 23.576 4.87868 24.4547C5.75736 25.3334 7.17157 25.3334 10 25.3334H22C24.8284 25.3334 26.2426 25.3334 27.1213 24.4547C28 23.576 28 22.1618 28 19.3334V12.6667C28 12.3659 28 12.0811 27.9989 11.8112L16.9713 17.9377C16.3672 18.2733 15.6328 18.2733 15.0287 17.9377L4.00106 11.8112ZM4.07586 9.66933C4.21552 9.67986 4.35518 9.72005 4.48564 9.79253L16 16.1894L27.5144 9.79253C27.6448 9.72005 27.7845 9.67986 27.9241 9.66933C27.8284 8.69279 27.6116 8.0357 27.1213 7.54537C26.2426 6.66669 24.8284 6.66669 22 6.66669H10C7.17157 6.66669 5.75736 6.66669 4.87868 7.54537C4.38835 8.0357 4.17164 8.69279 4.07586 9.66933Z" fill="#022366"/>
+									</svg>
+									<span>sales@paris24.com</span>
+								</a>
+								<h4>Customer Support Hours</h4>
+								<div class="schedule">
+									<ul>
+										<li>
+											<span>
+												<i>Mon-Fri:</i>
+											</span>
+											<strong>
+												<i>(10:00 am - 21:00)</i>
+											</strong>
+										</li>
+										<li>
+											<span>
+												<i>Saturday:</i>
+											</span>
+											<strong>
+												<i>(10:00 am - 19:00)</i>
+											</strong>
+										</li>
+										<li>
+											<span>
+												<i>Sunday:</i>
+											</span>
+											<strong>
+												<i>(13:00 pm - 21:00)</i>
+											</strong>
+										</li>
+										<li class="_blue">
+											<span></span>
+											<strong>
+												<i>GMT</i>
+											</strong>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__block">
+					<h2>
+						Safe and secure
+					</h2>
+					<ul>
+						<li>
+							<img src="./img/succes.png" alt="icon">
+							<p>
+								Buying 100% safe, only from approvals sellers.
+							</p>
+						</li>
+						<li>
+							<img src="./img/hand.png" alt="icon">
+							<p>
+								Best Customer service before and after purchasing.
+							</p>
+						</li>
+						<li>
+							<img src="./img/card.png" alt="icon">
+							<p>
+								100% secure payment system.
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__block">
+					<h2>
+						SEATSNET COMPANY
+					</h2>
+					<ul>
+						<li>
+							<a href="#">
+								News
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Help Center
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								News
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								About us
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Contact Seatsnet
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Affiliates
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Careers
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Gift Cards
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__block">
+					<h2>
+						MOST POPULAR EVENTS
+					</h2>
+					<div class="footer__block__con">
+						<ul>
+							<li>
+								<a href="#">
+									Liverpool FC
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Arsenal
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Manchester United
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Chelsea
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Tottenham
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Manchester City
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									FC Barcelona
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Real Madrid
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Champions League
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Uefa Europa League
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Juventus FC
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Paris Saint German
+								</a>
+							</li>
+						</ul>
+					</div>                
+				</div>
+				<div class="footer__inner__con">
+					<div class="footer__block footer__block_set">
+						<h2>
+							SETTINGS
+						</h2>
+						<div class="footer__block__option">
+							<p>
+								Language:
+							</p>
+							<div class="footer__block__option_head">
+								<img src="./img/icon/flag/flag-usa.svg" alt="flag ic">
+								<p>
+									English
+								</p>
+								<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z" />
+								</svg>
+							</div>
+							<div class="footer__block__option_body"></div>
+						</div>
+						<div class="footer__block__option">
+							<p>
+								Language:
+							</p>
+							<div class="footer__block__option_head">
+								<p class="euro">
+									Euro (€)
+								</p>
+								<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z" />
+								</svg>
+							</div>
+							<div class="footer__block__option_body"></div>
+						</div>
+					</div>
+					<div class="footer__block footer__block_width">
+						<h2>
+							Follow us
+						</h2>
+						<p>
+							Subscribe to get our best deals. Be the first to know!
+						</p>
+					</div>
+					<div class="footer__block footer__forms">
+						<form action="#">
+							<input type="text" placeholder="Enter email address">
+							<button type="submit">Subscribe</button>
+						</form>
+					</div>
+				</div>            
+			</div>
+			<div class="footer__block footer__block_copy">
+				<p>
+					Use of this site signifies your agreement to 
+					<a href="#">
+						our terms and conditions.
+					</a> <a href="#">Privacy policy</a> and <a href="#">cookies policy.</a>
+				</p>
+				<p class="copyright">
+					© 2024 paris24tickets.com.
+				</p>
+			</div>
+		</div>
+	</footer>
+
+
+<!-- <div class="modal__menu">
+    <div class="modal__menu_head">
+        <img class="modal__menu_logo" src="./img/icon/logotype.svg" alt="menu logo">
+        <img class="modal__menu_close" src="./img/icon/Close.svg" alt="close ic">
+    </div>
+    <div class="carte carte__mob">
+        <div class="carte__item">
+            <div class="carte__item__head">
+                <img class="flag__ic" src="./img/icon/flag/flag-usa.svg" alt="usa flag ic">
+                <span>English</span>
+                <svg class="arrow__ic" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z"/>
+                </svg>
+            </div>
+            <ul class="carte__item__body">
+                <li>
+                    <a class="active" href="#">
+                        <img src="./img/icon/flag/flag-usa.svg" alt="usa flag ic">
+                        English
+                    </a>
+                </li>
+                <li>
+                    <a  href="#">
+                        <img src="./img/icon/flag/flag__french.svg" alt="usa flag ic">
+                        French
+                    </a>
+                </li>
+                <li>
+                    <a  href="#">
+                        <img src="./img/icon/flag/flag__germany.svg" alt="usa flag ic">
+                        Germany
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="carte__item">
+            <div class="carte__item__head">
+                <span>Euro (€)</span>
+                <svg class="arrow__ic" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z"/>
+                </svg>
+            </div>
+            <ul class="carte__item__body money">
+                <li>
+                    <a class="active" href="#">
+                        Euro (€)
+                    </a>
+                </li>
+                <li>
+                    <a  href="#">
+                        GB Pound (£)
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a href="#" class="carte__login">
+            Login
+        </a>
+        <a href="#" class="carte__sell">
+            <img src="./img/icon/ticket-small.png" alt="ticket ic">
+            Sell Tickets
+        </a>
+    </div>
+</div> -->
+
+
+<!-- swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/libs/nouislider.js"></script>
+<script src="./js/libs/flipdown.js"></script>
+<!-- main JS -->
+<script src="js/app.min.js"></script>
+
+<script>
+
+	const date = new Date();
+	date.setFullYear(2024);
+	date.setMonth(2);
+	date.setDate(9);
+	date.setHours(14);
+	date.setMinutes(30);
+	date.setSeconds(0);
+	date.setMilliseconds(0);
+
+	var currentTime = Math.floor(date / 1000);
+
+	var countdownElement = document.querySelector('#flipdown-mob');
+	var flipdown = new FlipDown(currentTime, {
+		headings: ["Days", "Hours", "Minutes", "Seconds"],
+		theme: "light"
+	}).start();
+
+	flipdown.ifEnded(() => {
+		console.log('The countdown has ended!');
+	});
+
+	flipdown.appendTo(countdownElement);
+
+
+
+</script>
+</body>
+
+</html>
