@@ -995,6 +995,65 @@ textarea {
   position: absolute;
   z-index: 3
 }
+.category__times {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 19px
+}
+.category__liga {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2px 11px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 500;
+  color: var(--black);
+  background: var(--accent);
+  margin-bottom: 12px
+}
+.category__stadion {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  color: var(--black)
+}
+.category__stadion span {
+  font-weight: 500;
+  color: #303030
+}
+.category__item__info h2 {
+  margin: 0;
+  margin-bottom: 5px
+}
+@media screen and (max-width:992px) {
+  .category__filter {
+    gap: 15px
+  }
+}
+@media screen and (max-width:768px) {
+  .category__filter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+  .category h2 {
+    font-size: 26px;
+    line-height: 30px
+  }
+  .category-banner img {
+    height: 204px
+  }
+  .category .events__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+}
 .aside__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1049,6 +1108,11 @@ aside {
   width: 100%;
   max-width: 495px;
   background: var(--white)
+}
+@media screen and (max-width:768px) {
+  aside {
+    max-width: none
+  }
 }
 .label__title_btn {
   font-size: 16px!important;
@@ -1727,7 +1791,7 @@ main {
   margin-top: 62px;
   position: relative
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width:768px) {
   .event-page .events__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

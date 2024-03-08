@@ -778,9 +778,70 @@ select {
     z-index: 3;
   }
 
+  &__times{
+    display: flex;
+    gap: 19px;
+  }
 
+  &__liga{
+    width: fit-content;
+    padding: 2px 11px;
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 500;
+    color: var(--black);
+    background: var(--accent);
+    margin-bottom: 12px;
+  }
 
+  &__stadion{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    color: var(--black);
+
+    span{
+      font-weight: 500;
+      color: #303030;
+    }
+  }
+
+  &__item__info{
+    h2{
+      margin: 0;
+      margin-bottom: 5px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    &__filter{
+      gap: 15px;
+    }
+
+  }
+  @media screen and (max-width: 768px) {
+    &__filter{
+      flex-direction: column;
+    }
+
+    h2{
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    &-banner{
+      img{
+        height: 204px;
+      }
+    }
+
+    .events__body{
+      flex-direction: column;
+    }
+  }
 }
+
 .aside__title{
   display: flex;
   align-items: center;
@@ -799,6 +860,7 @@ select {
     color: var(--primary) !important;
   }
 }
+
 
 .aside__inp{
   padding: 14px 54px;
@@ -831,6 +893,10 @@ aside {
   width: 100%;
   max-width: 495px;
   background: var(--white);
+
+  @media screen and (max-width: 768px) {
+    max-width: none;
+  }
 
 }
 .label__title_btn {
