@@ -525,6 +525,12 @@ select {
     }
   }
 
+  @media screen and (max-width: 330px) {
+    .menu__more{
+      padding: 13px 7px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     background: url(../img/banner-bgd.jpg) no-repeat;
     background-size: cover;
@@ -564,7 +570,7 @@ select {
   }
 
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 1024px) {
     &__menu{
       display: flex;
     }
@@ -572,7 +578,7 @@ select {
       display: none;
     }
   }
-  @media screen and (min-width: 1224px) {
+  @media screen and (min-width: 1300px) {
     &__menu{
       a{
         font-size: 18px;
@@ -580,7 +586,7 @@ select {
       }
     }
   }
-  @media screen and (min-width: 1475px) {
+  @media screen and (min-width: 1551px) {
     &__menu{
       a{
         padding: 18px 32px;

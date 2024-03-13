@@ -728,6 +728,11 @@ textarea {
 .banner .active-h:hover {
   background: var(--accent)
 }
+@media screen and (max-width:330px) {
+  .banner .menu__more {
+    padding: 13px 7px
+  }
+}
 @media screen and (min-width:768px) {
   .banner {
     background: url(../img/banner-bgd.jpg) no-repeat;
@@ -778,7 +783,7 @@ textarea {
     line-height: 30px
   }
 }
-@media screen and (min-width:991px) {
+@media screen and (min-width:1024px) {
   .banner__menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -788,13 +793,13 @@ textarea {
     display: none
   }
 }
-@media screen and (min-width:1224px) {
+@media screen and (min-width:1300px) {
   .banner__menu a {
     font-size: 18px;
     padding: 15px 18px
   }
 }
-@media screen and (min-width:1475px) {
+@media screen and (min-width:1551px) {
   .banner__menu a {
     padding: 18px 32px
   }
@@ -1866,7 +1871,7 @@ main {
   margin-top: 62px;
   position: relative
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:992px) {
   .event-page .events__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1946,6 +1951,11 @@ main {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column
+  }
+}
+@media screen and (max-width:1100px) {
+  .event-page .events__body .body__lft .map img {
+    max-width: 380px
   }
 }
 .event-page .events__notes {
