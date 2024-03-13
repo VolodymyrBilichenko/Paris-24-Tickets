@@ -190,7 +190,6 @@
 					input {
 						border: none;
 						padding: 0;
-						margin-right: -22px;
 					}
 				}
 			}
@@ -275,6 +274,10 @@
 				display: flex;
 				align-items: center;
 				gap: 16px;
+
+				@media screen and (max-width: 429px) {
+					flex-wrap: wrap;
+				}
 				img,
 				svg {
 					width: 36px;
@@ -381,13 +384,17 @@
 				align-items: center;
 				justify-content: space-between;
 
+				@media screen and (max-width: 429px) {
+					flex-wrap: wrap;
+				}
+
 				gap: 10px;
 				span {
 					max-width: 244px;
 				}
 
 
-				#flipdown {
+				.flipdown {
 					width: fit-content;
 					display: flex;
 					align-items: center;
@@ -433,6 +440,11 @@
 			.form__rht {
 				max-width: 495px;
 				width: 100%;
+
+				
+				padding: 0;
+				background: transparent;
+				box-shadow: none;
 
 				.time {
 					@media screen and (max-width: 576px) {
@@ -509,6 +521,11 @@
 					display: flex;
 					justify-content: space-between;
 
+					@media screen and (max-width: 576px) {
+						flex-direction: column;
+						gap: 12px;
+					}
+
 					.lft__item,
 					.rht__item {
 						display: flex;
@@ -554,11 +571,13 @@
 				background: #EFCFCE;
 				border-left: 5px solid var(--error);
 				display: flex;
-				align-items: center;
 				padding: 13px 21px;
 				border-radius: 14px;
 				gap: 14px;
 				width: fit-content;
+				svg {
+					min-width: 27px;
+				}
 				span {
 					color: var(--error);
 					font-size: 18px;

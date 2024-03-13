@@ -1190,6 +1190,11 @@ label.form__item {
   color: var(--white);
   margin-bottom: 24px
 }
+@media screen and (max-width:576px) {
+  .footer .footer__block_set {
+    margin-bottom: 24px
+  }
+}
 .footer__block {
   margin-bottom: 41px
 }
@@ -1246,6 +1251,17 @@ label.form__item {
   align-items: center;
   gap: 10px;
   margin-bottom: 13px
+}
+.footer__block__option .flag__ic {
+  margin-right: 0
+}
+.footer__block__option .carte__item span {
+  font-size: 15px
+}
+@media screen and (max-width:576px) {
+  .footer__block__option {
+    margin-bottom: 8px
+  }
 }
 .footer__block__option:last-child {
   margin-bottom: 0
@@ -1333,15 +1349,30 @@ label.form__item {
   padding-top: 15px;
   border-top: 1px solid var(--silver)
 }
+@media screen and (max-width:576px) {
+  .footer__block_copy {
+    margin-top: 15px
+  }
+}
 .footer__block_copy p {
   font-size: 14px;
   line-height: 18px;
   max-width: none
 }
+@media screen and (max-width:576px) {
+  .footer__block_copy p {
+    font-size: 12px
+  }
+}
 .footer__block_copy a {
   font-weight: 700;
   font-size: 12px;
   line-height: 18px
+}
+@media screen and (max-width:576px) {
+  .footer__block_copy a {
+    font-size: 12px
+  }
 }
 .footer__block_copy .copyright {
   white-space: nowrap
@@ -1381,13 +1412,43 @@ label.form__item {
   }
 }
 .modal__menu {
-  top: 0;
+  position: fixed;
+  top: -100vh;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
   left: 0;
   width: 100%;
   height: 100%;
   padding: 25px 15px;
   background: var(--primary);
   z-index: 10
+}
+.modal__menu .carte__mob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 37px
+}
+.modal__menu .carte__item__body {
+  left: 0;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  z-index: 2
+}
+.modal__menu .carte__sell {
+  background: var(--tint-1)
+}
+.modal__menu._active {
+  top: 0
 }
 .modal__menu_head {
   display: -webkit-box;
@@ -1448,18 +1509,21 @@ main {
   font-weight: 600;
   font-size: 18px
 }
-.custom-checkbox input {
+.custom-checkbox input,
+.custom-radio input {
   display: none
 }
-.custom-checkbox label {
+.custom-checkbox label,
+.custom-radio label {
+  gap: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 16px;
   color: var(--black);
-  font-size: 13px
+  font-size: 18px
 }
-.custom-checkbox label:before {
+.custom-checkbox label:before,
+.custom-radio label:before {
   content: "";
   border: 2px solid var(--primary);
   min-width: 20px;
@@ -1472,9 +1536,13 @@ main {
   transition: all .3s ease;
   background-position: center
 }
-.custom-checkbox input:checked + label:before {
+.custom-checkbox input:checked + label:before,
+.custom-radio input:checked + label:before {
   background: url(../img/icon/check-blue.svg) no-repeat var(--accent) center;
   border: 2px solid transparent
+}
+.custom-radio label:before {
+  border-radius: 50%
 }
 .input-select {
   background: var(--white);
@@ -1489,6 +1557,17 @@ main {
   align-items: center;
   height: 100%;
   gap: 12px
+}
+.input-select select {
+  width: 100%;
+  margin-right: -28px;
+  height: 100%
+}
+.input-select input::-webkit-inner-spin-button,
+.input-select input::-webkit-outer-spin-button,
+.input-select select::-webkit-inner-spin-button,
+.input-select select::-webkit-outer-spin-button {
+  -webkit-appearance: none
 }
 .input-select input {
   width: 100%;
@@ -1574,7 +1653,7 @@ main {
 }
 .breadcrumbs a:after {
   content: "";
-  background: url(../../img/icon/event-arrow_right_grey.svg);
+  background: url(../img/icon/event-arrow_right_grey.svg);
   background-size: contain;
   width: 9px;
   height: 13px;
@@ -1703,7 +1782,7 @@ main {
   }
 }
 .event-page .events__filter #slider {
-  margin-top: auto;
+  margin-top: 35px;
   margin-bottom: 15px
 }
 .event-page .events__filter .noUi-tooltip {
@@ -1765,10 +1844,6 @@ main {
   width: 100%;
   max-width: 380px
 }
-.event-page .events__filter input {
-  width: 100%;
-  margin-right: -22px
-}
 .event-page .events__filter img {
   margin-right: 12px;
   display: block;
@@ -1827,6 +1902,14 @@ main {
   -ms-flex-direction: column;
   flex-direction: column
 }
+@media screen and (max-width:576px) {
+  .event-page .events__body .body__lft .buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+  }
+}
 .event-page .events__body .body__lft button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1856,6 +1939,14 @@ main {
   display: -ms-flexbox;
   display: flex;
   background: var(--white)
+}
+@media screen and (max-width:576px) {
+  .event-page .events__body .body__lft .map {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
 }
 .event-page .events__notes {
   -webkit-box-shadow: 1px 1px 5px 2px rgba(0,0,0,.07);
@@ -1920,7 +2011,8 @@ main {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 9px
+  gap: 9px;
+  margin-right: auto
 }
 .event-page .events__item .price__select {
   display: -webkit-box;
@@ -1965,7 +2057,6 @@ main {
   justify-content: space-between
 }
 .event-page .events__item .item__price {
-  margin-left: auto;
   width: 100%;
   max-width: 233px;
   display: -webkit-box;
@@ -2218,8 +2309,7 @@ main {
 }
 .checkout-page .checkout__form .fields .clear-label input {
   border: none;
-  padding: 0;
-  margin-right: -22px
+  padding: 0
 }
 .checkout-page .checkout__form .inner-title {
   display: -webkit-box;
@@ -2325,6 +2415,12 @@ main {
   -ms-flex-align: center;
   align-items: center;
   gap: 16px
+}
+@media screen and (max-width:429px) {
+  .checkout-page .checkout__form .phone {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
 }
 .checkout-page .checkout__form .phone img,
 .checkout-page .checkout__form .phone svg {
@@ -2449,10 +2545,16 @@ main {
   justify-content: space-between;
   gap: 10px
 }
+@media screen and (max-width:429px) {
+  .checkout-page .checkout__form .time {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+}
 .checkout-page .checkout__form .time span {
   max-width: 244px
 }
-.checkout-page .checkout__form .time #flipdown {
+.checkout-page .checkout__form .time .flipdown {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -2464,42 +2566,46 @@ main {
   align-items: center;
   height: auto
 }
-.checkout-page .checkout__form .time #flipdown .rotor-group-heading {
+.checkout-page .checkout__form .time .flipdown .rotor-group-heading {
   display: none
 }
-.checkout-page .checkout__form .time #flipdown .rotor-group:first-child,
-.checkout-page .checkout__form .time #flipdown .rotor-group:nth-child(2) {
+.checkout-page .checkout__form .time .flipdown .rotor-group:first-child,
+.checkout-page .checkout__form .time .flipdown .rotor-group:nth-child(2) {
   display: none
 }
-.checkout-page .checkout__form .time #flipdown .rotor-bottom,
-.checkout-page .checkout__form .time #flipdown .rotor-leaf-front,
-.checkout-page .checkout__form .time #flipdown .rotor-leaf-rear,
-.checkout-page .checkout__form .time #flipdown .rotor-top {
+.checkout-page .checkout__form .time .flipdown .rotor-bottom,
+.checkout-page .checkout__form .time .flipdown .rotor-leaf-front,
+.checkout-page .checkout__form .time .flipdown .rotor-leaf-rear,
+.checkout-page .checkout__form .time .flipdown .rotor-top {
   font-family: inter;
   font-weight: 400
 }
-.checkout-page .checkout__form .time #flipdown .flipdown.flipdown__theme-light .rotor-leaf-rear,
-.checkout-page .checkout__form .time #flipdown .rotor-bottom,
-.checkout-page .checkout__form .time #flipdown .rotor-leaf.flipped .rotor-leaf-rear,
-.checkout-page .checkout__form .time #flipdown.flipdown__theme-light .rotor-bottom {
+.checkout-page .checkout__form .time .flipdown .flipdown.flipdown__theme-light .rotor-leaf-rear,
+.checkout-page .checkout__form .time .flipdown .rotor-bottom,
+.checkout-page .checkout__form .time .flipdown .rotor-leaf.flipped .rotor-leaf-rear,
+.checkout-page .checkout__form .time .flipdown.flipdown__theme-light .rotor-bottom {
   background: var(--white)
 }
-.checkout-page .checkout__form .time #flipdown .rotor {
+.checkout-page .checkout__form .time .flipdown .rotor {
   -webkit-box-shadow: 4px 4px 35px 0 rgba(166,171,189,.46);
   box-shadow: 4px 4px 35px 0 rgba(166,171,189,.46)
 }
-.checkout-page .checkout__form .time #flipdown .rotor:after {
+.checkout-page .checkout__form .time .flipdown .rotor:after {
   border-top-color: #c7c7c7
 }
-.checkout-page .checkout__form .time #flipdown .rotor .rotor-top {
+.checkout-page .checkout__form .time .flipdown .rotor .rotor-top {
   background: #f6f6f6
 }
-.checkout-page .checkout__form .time #flipdown.flipdown__theme-light .rotor-leaf-front {
+.checkout-page .checkout__form .time .flipdown.flipdown__theme-light .rotor-leaf-front {
   background: #f6f6f6
 }
 .checkout-page .checkout__form .form__rht {
   max-width: 495px;
-  width: 100%
+  width: 100%;
+  padding: 0;
+  background: 0 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
 }
 @media screen and (max-width:576px) {
   .checkout-page .checkout__form .form__rht .time {
@@ -2597,6 +2703,15 @@ main {
   -ms-flex-pack: justify;
   justify-content: space-between
 }
+@media screen and (max-width:576px) {
+  .checkout-page .checkout__form .order__item .item__mini-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 12px
+  }
+}
 .checkout-page .checkout__form .order__item .item__mini-info .lft__item,
 .checkout-page .checkout__form .order__item .item__mini-info .rht__item {
   display: -webkit-box;
@@ -2654,15 +2769,15 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   padding: 13px 21px;
   border-radius: 14px;
   gap: 14px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content
+}
+.checkout-page .checkout__form .attention svg {
+  min-width: 27px
 }
 .checkout-page .checkout__form .attention span {
   color: var(--error);

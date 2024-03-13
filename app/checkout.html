@@ -14,7 +14,6 @@
 	<link rel="stylesheet" href="css/flipdown.min.css" />
 
 	<link rel="stylesheet" href="css/event-page.css">
-	<link rel="stylesheet" href="css/checkout-page.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -302,7 +301,7 @@
 										<div class="lft">
 											<div class="lft__item">
 												<strong>Section:</strong>
-											<span>Fondo Norte Bajo</span>
+												<span>Fondo Norte Bajo</span>
 											</div>
 											<div class="lft__item">
 												<strong>Similar or Upgrade</strong>
@@ -352,7 +351,7 @@
 							<div class="timer-mob">
 								<div class="time">
 									<span>This ticket will no longer be reserved in:</span>
-									<div id="flipdown-mob" class="flipdown-mob"></div>
+									<div id="flipdown-mob" class="flipdown"></div>
 								</div>
 							</div>
 							<div class="inner-title">
@@ -533,7 +532,7 @@
 						<aside class="form__rht">
 							<div class="time">
 								<span>This ticket will no longer be reserved in:</span>
-								<div id="flipdown" class="flipdown"></div>
+								<div id="flipdown-desc" class="flipdown"></div>
 							</div>
 
 							<div class="about aside-block">
@@ -812,30 +811,62 @@
 							<p>
 								Language:
 							</p>
-							<div class="footer__block__option_head">
-								<img src="./img/icon/flag/flag-usa.svg" alt="flag ic">
-								<p>
-									English
-								</p>
-								<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-									<path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z" />
-								</svg>
+							
+							<div class="carte__item">
+								<div class="carte__item__head">
+									<img class="flag__ic" src="./img/icon/flag/flag-usa.svg" alt="usa flag ic">
+									<span>English</span>
+									<svg class="arrow__ic" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z"/>
+									</svg>
+								</div>
+								<ul class="carte__item__body">
+									<li>
+										<a class="active" href="#">
+											<img src="./img/icon/flag/flag-usa.svg" alt="usa flag ic">
+											English
+										</a>
+									</li>
+									<li>
+										<a  href="#">
+											<img src="./img/icon/flag/flag__french.svg" alt="usa flag ic">
+											French
+										</a>
+									</li>
+									<li>
+										<a  href="#">
+											<img src="./img/icon/flag/flag__germany.svg" alt="usa flag ic">
+											Germany
+										</a>
+									</li>
+								</ul>
 							</div>
-							<div class="footer__block__option_body"></div>
+
 						</div>
 						<div class="footer__block__option">
 							<p>
 								Language:
 							</p>
-							<div class="footer__block__option_head">
-								<p class="euro">
-									Euro (€)
-								</p>
-								<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-									<path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z" />
-								</svg>
+							<div class="carte__item">
+								<div class="carte__item__head">
+									<span>Euro (€)</span>
+									<svg class="arrow__ic" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z"/>
+									</svg>
+								</div>
+								<ul class="carte__item__body money">
+									<li>
+										<a class="active" href="#">
+											Euro (€)
+										</a>
+									</li>
+									<li>
+										<a  href="#">
+											GB Pound (£)
+										</a>
+									</li>
+								</ul>
 							</div>
-							<div class="footer__block__option_body"></div>
 						</div>
 					</div>
 					<div class="footer__block footer__block_width">
@@ -869,107 +900,109 @@
 	</footer>
 
 
-<!-- <div class="modal__menu">
-    <div class="modal__menu_head">
-        <img class="modal__menu_logo" src="./img/icon/logotype.svg" alt="menu logo">
-        <img class="modal__menu_close" src="./img/icon/Close.svg" alt="close ic">
-    </div>
-    <div class="carte carte__mob">
-        <div class="carte__item">
-            <div class="carte__item__head">
-                <img class="flag__ic" src="./img/icon/flag/flag-usa.svg" alt="usa flag ic">
-                <span>English</span>
-                <svg class="arrow__ic" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z"/>
-                </svg>
-            </div>
-            <ul class="carte__item__body">
-                <li>
-                    <a class="active" href="#">
-                        <img src="./img/icon/flag/flag-usa.svg" alt="usa flag ic">
-                        English
-                    </a>
-                </li>
-                <li>
-                    <a  href="#">
-                        <img src="./img/icon/flag/flag__french.svg" alt="usa flag ic">
-                        French
-                    </a>
-                </li>
-                <li>
-                    <a  href="#">
-                        <img src="./img/icon/flag/flag__germany.svg" alt="usa flag ic">
-                        Germany
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="carte__item">
-            <div class="carte__item__head">
-                <span>Euro (€)</span>
-                <svg class="arrow__ic" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z"/>
-                </svg>
-            </div>
-            <ul class="carte__item__body money">
-                <li>
-                    <a class="active" href="#">
-                        Euro (€)
-                    </a>
-                </li>
-                <li>
-                    <a  href="#">
-                        GB Pound (£)
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <a href="#" class="carte__login">
-            Login
-        </a>
-        <a href="#" class="carte__sell">
-            <img src="./img/icon/ticket-small.png" alt="ticket ic">
-            Sell Tickets
-        </a>
-    </div>
-</div> -->
+	<div class="modal__menu">
+		<div class="modal__menu_head">
+			<img class="modal__menu_logo" src="./img/icon/logotype.svg" alt="menu logo">
+			<img class="modal__menu_close" src="./img/icon/Close.svg" alt="close ic">
+		</div>
+		<div class="carte carte__mob">
+			<div class="carte__item">
+				<div class="carte__item__head">
+					<img class="flag__ic" src="./img/icon/flag/flag-usa.svg" alt="usa flag ic">
+					<span>English</span>
+					<svg class="arrow__ic" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z"/>
+					</svg>
+				</div>
+				<ul class="carte__item__body">
+					<li>
+						<a class="active" href="#">
+							<img src="./img/icon/flag/flag-usa.svg" alt="usa flag ic">
+							English
+						</a>
+					</li>
+					<li>
+						<a  href="#">
+							<img src="./img/icon/flag/flag__french.svg" alt="usa flag ic">
+							French
+						</a>
+					</li>
+					<li>
+						<a  href="#">
+							<img src="./img/icon/flag/flag__germany.svg" alt="usa flag ic">
+							Germany
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="carte__item">
+				<div class="carte__item__head">
+					<span>Euro (€)</span>
+					<svg class="arrow__ic" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11.1808 15.8297L6.54199 9.20285C5.89247 8.27496 6.55629 7 7.68892 7L16.3111 7C17.4437 7 18.1075 8.27496 17.458 9.20285L12.8192 15.8297C12.4211 16.3984 11.5789 16.3984 11.1808 15.8297Z"/>
+					</svg>
+				</div>
+				<ul class="carte__item__body money">
+					<li>
+						<a class="active" href="#">
+							Euro (€)
+						</a>
+					</li>
+					<li>
+						<a  href="#">
+							GB Pound (£)
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a href="#" class="carte__login">
+				Login
+			</a>
+			<a href="#" class="carte__sell">
+				<img src="./img/icon/ticket-small.png" alt="ticket ic">
+				Sell Tickets
+			</a>
+		</div>
+	</div>
 
 
-<!-- swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="./js/libs/nouislider.js"></script>
-<script src="./js/libs/flipdown.js"></script>
-<!-- main JS -->
-<script src="js/app.min.js"></script>
+	<!-- swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="./js/libs/nouislider.js"></script>
+	<script src="./js/libs/flipdown.js"></script>
+	<!-- main JS -->
+	<script src="js/app.min.js"></script>
 
-<script>
+	<script>
 
-	const date = new Date();
-	date.setFullYear(2024);
-	date.setMonth(2);
-	date.setDate(9);
-	date.setHours(14);
-	date.setMinutes(30);
-	date.setSeconds(0);
-	date.setMilliseconds(0);
+		const date = new Date();
+		date.setFullYear(2024);
+		date.setMonth(2);
+		date.setDate(14);
+		date.setHours(14);
+		date.setMinutes(30);
+		date.setSeconds(0);
+		date.setMilliseconds(0);
 
-	var currentTime = Math.floor(date / 1000);
+		var currentTime = Math.floor(date / 1000);
 
-	var countdownElement = document.querySelector('#flipdown-mob');
-	var flipdown = new FlipDown(currentTime, {
-		headings: ["Days", "Hours", "Minutes", "Seconds"],
-		theme: "light"
-	}).start();
+		var flipdown = new FlipDown(currentTime, "flipdown-desc", {
+			headings: ["", "", "", ""],
+			theme: "light"
+		}).start();
 
-	flipdown.ifEnded(() => {
-		console.log('The countdown has ended!');
-	});
+		var flipdown = new FlipDown(currentTime, "flipdown-mob", {
+			headings: ["", "", "", ""],
+			theme: "light"
+		}).start();
 
-	flipdown.appendTo(countdownElement);
+		flipdown.ifEnded(() => {
+			console.log('The countdown has ended!');
+		});
 
 
 
-</script>
+	</script>
 </body>
 
 </html>
