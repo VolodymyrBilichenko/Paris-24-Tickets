@@ -334,6 +334,7 @@ select {
   background-position: center;
   padding: 85px 0 110px;
   position: relative;
+  // overflow: hidden;
 
   h2{
     font-weight: 600;
@@ -393,11 +394,11 @@ select {
   &__menu{
     display: none;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    overflow: auto;
+    // position: absolute;
+    // bottom: 0;
+    // left: 50%;
+    // transform: translate(-50%);
+    // overflow: auto;
 
     img{
       width: 28px;
@@ -425,14 +426,20 @@ select {
     .active{
       background: var(--accent);
       border: 1px solid var(--accent);
-    }    
+    } 
+    
+    @media screen and (max-width: 768px) {
+      a{
+        padding: 11px 13px;
+      }
+    }
   }
 
   &__menu_mob{
     display: flex;
-    position: absolute;
-    bottom: 0;
-    left: 15px;
+    // position: absolute;
+    // bottom: 0;
+    // left: 15px;
 
     &__item{
       display: flex;
@@ -471,6 +478,8 @@ select {
     border: 1px solid #0000001A;
     transition: all .3s ease;
     cursor: pointer;
+    height: 100%;
+    position: relative;
 
     &:hover{
       background: var(--xl-grey);
@@ -487,7 +496,7 @@ select {
       transition: all .3s linear;
       position: absolute;
       top: 51px;
-      right: -6px;
+      right: 0;
 
       a{
         display: flex;
@@ -504,6 +513,10 @@ select {
 
       li{
         margin-bottom: 10px;
+        display: none;
+        &._show {
+          display: block;
+        }
         &:last-child{
           margin-bottom: 0;
         }
@@ -522,12 +535,6 @@ select {
 
     &:hover{
       background: var(--accent);
-    }
-  }
-
-  @media screen and (max-width: 330px) {
-    .menu__more{
-      padding: 13px 7px;
     }
   }
 
@@ -570,7 +577,7 @@ select {
   }
 
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1px) {
     &__menu{
       display: flex;
     }
@@ -578,19 +585,28 @@ select {
       display: none;
     }
   }
-  @media screen and (min-width: 1300px) {
+  @media screen and (min-width: 1px) {
+    &__menu{
+      a{
+        font-size: 14px;
+        padding: 11px 13px;
+      }
+
+    }
+    .menu__more{
+      padding: 11px 13px;
+    }
+  }
+  @media screen and (min-width: 768px) {
     &__menu{
       a{
         font-size: 18px;
-        padding: 15px 18px;
-      }
-    }
-  }
-  @media screen and (min-width: 1551px) {
-    &__menu{
-      a{
         padding: 18px 32px;
       }
+
+    }
+    .menu__more{
+      padding: 18px 15px;
     }
   }
 
@@ -1224,13 +1240,19 @@ label.form__item {
 }
 
 
-
-
-
-
-
-
-
+.banner__menu_mob._active {
+  display: block;
+  }
+  
+  
+  .banner__menu-block {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+  }
 
 
 

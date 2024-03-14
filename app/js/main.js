@@ -74,3 +74,43 @@ document.querySelector('.header__burger').onclick = () => {
 document.querySelector('.modal__menu_close').onclick = () => {
     document.querySelector('.modal__menu').classList.remove('_active')
 }
+
+
+
+const resizeMenu = () => {
+    const menuWidth = document.querySelector(".banner__menu").clientWidth
+    const menuHiddenItemsList = document.querySelectorAll(".banner__menu li:not(._hidden)")
+    const menuItemsList = document.querySelectorAll(".banner__menu li")
+    const itemRightPosition = menuHiddenItemsList[menuHiddenItemsList.length - 1].getBoundingClientRect().x + menuHiddenItemsList[menuHiddenItemsList.length - 1].getBoundingClientRect().width - 20
+    const buttonMoreItems = document.querySelector(".banner__menu_mob")
+    const moreItemslist = document.querySelectorAll(".menu__more__body li")
+
+    if(menuHiddenItemsList.length !== menuItemsList.length) {
+        buttonMoreItems.classList.add("_active")
+    } else {
+        buttonMoreItems.classList.remove("_active")
+    }
+
+    if(itemRightPosition < menuWidth) {
+        menuHiddenItemsList[menuHiddenItemsList.length - 1].style.display = "none"
+        menuHiddenItemsList[menuHiddenItemsList.length - 1].classList.add('_hidden')
+
+        moreItemslist[menuHiddenItemsList.length - 1].classList.add('_show')
+
+    } else if(itemRightPosition - menuWidth > 120) {
+        menuItemsList[menuHiddenItemsList.length].style.display = "block"
+        menuItemsList[menuHiddenItemsList.length].classList.remove('_hidden')
+
+        moreItemslist[menuHiddenItemsList.length].classList.remove('_show')
+    }
+}
+
+window.addEventListener('resize', function(event) {
+
+    resizeMenu()
+
+})
+
+for(let i = 0; i < 10; i++) {
+    resizeMenu()
+}

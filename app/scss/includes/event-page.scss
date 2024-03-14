@@ -90,7 +90,7 @@ main {
 	}
 	input{
 		width: 100%;
-		margin-right: -12px;
+		margin-right: -32px;
 		height: 100%;
 	}
 	img, svg{
@@ -352,7 +352,7 @@ main {
 			gap: 51px;
 			margin-top: 62px;
 			position: relative;
-			@media screen and (max-width: 992px) {
+			@media screen and (max-width: 1200px) {
 				flex-direction: column;
 				margin-top: 33px;
 				gap: 33px;
@@ -445,16 +445,13 @@ main {
 			padding: 20px 33px;
 			border-radius: 10px;
 			background: var(--white);
+			min-width: 820px;
 
-			@media screen and (max-width: 576px) {
-				padding: 20px 14px;
-				gap: 37px;
-			}
+			
 
 			.item__poster {
 				width: 100%;
 				max-width: 240px;
-				height: 240px;
 				object-fit: contain;
 				display: block;
 			}
@@ -464,7 +461,6 @@ main {
 				flex-direction: column;
 				gap: 9px;
 				margin-right: auto;
-				white-space: nowrap;
 			}
 
 			.price__select {
@@ -497,6 +493,31 @@ main {
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
+			}
+
+			@media screen and (max-width: 1300px) {
+				.item__poster {
+					width: 100%;
+					max-width: 160px;
+					object-fit: contain;
+				}
+			}
+			@media screen and (max-width: 1200px) {
+				.item__poster {
+					width: 100%;
+					max-width: 240px;
+					object-fit: contain;
+				}
+				min-width: 0;
+			}
+
+			@media screen and (max-width: 870px) {
+				flex-direction: column;
+			}
+
+			@media screen and (max-width: 576px) {
+				padding: 20px 14px;
+				gap: 37px;
 			}
 
 			// .item__buy {
