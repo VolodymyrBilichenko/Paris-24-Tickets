@@ -383,15 +383,20 @@
 				justify-content: space-between;
 				align-items: center;
 				justify-content: space-between;
-
-				@media screen and (max-width: 429px) {
-					flex-wrap: wrap;
-				}
-
 				gap: 10px;
 				span {
 					max-width: 244px;
 				}
+
+				@media screen and (max-width: 429px) {
+					// flex-wrap: wrap;
+
+					span {
+						max-width: 130px;
+					}
+				}
+
+				
 
 
 				.flipdown {

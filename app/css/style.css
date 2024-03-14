@@ -1576,7 +1576,7 @@ main {
 }
 .input-select input {
   width: 100%;
-  margin-right: -28px;
+  margin-right: -12px;
   height: 100%
 }
 .input-select img,
@@ -1991,8 +1991,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   gap: 27px;
   width: 100%;
   padding: 20px 33px;
@@ -2022,7 +2020,8 @@ main {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 9px;
-  margin-right: auto
+  margin-right: auto;
+  white-space: nowrap
 }
 .event-page .events__item .price__select {
   display: -webkit-box;
@@ -2555,14 +2554,13 @@ main {
   justify-content: space-between;
   gap: 10px
 }
-@media screen and (max-width:429px) {
-  .checkout-page .checkout__form .time {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap
-  }
-}
 .checkout-page .checkout__form .time span {
   max-width: 244px
+}
+@media screen and (max-width:429px) {
+  .checkout-page .checkout__form .time span {
+    max-width: 130px
+  }
 }
 .checkout-page .checkout__form .time .flipdown {
   width: -webkit-fit-content;
