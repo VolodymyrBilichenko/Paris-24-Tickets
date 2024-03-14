@@ -404,6 +404,13 @@ select {
       width: 28px;
       height: 28px;
     }
+    
+    span{
+      white-space: nowrap;
+      max-width: 120px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 
     a{
       display: flex;
@@ -437,6 +444,7 @@ select {
 
   &__menu_mob{
     display: flex;
+    position: relative;
     // position: absolute;
     // bottom: 0;
     // left: 15px;

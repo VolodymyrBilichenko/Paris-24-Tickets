@@ -592,6 +592,13 @@ textarea {
   width: 28px;
   height: 28px
 }
+.banner__menu span {
+  white-space: nowrap;
+  max-width: 120px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis
+}
 .banner__menu a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,7 +633,8 @@ textarea {
 .banner__menu_mob {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex
+  display: flex;
+  position: relative
 }
 .banner__menu_mob__item {
   display: -webkit-box;
@@ -1594,7 +1602,7 @@ main {
 }
 .input-select input {
   width: 100%;
-  margin-right: -32px;
+  margin-right: -45px;
   height: 100%
 }
 .input-select img,
@@ -1971,11 +1979,6 @@ main {
     flex-direction: column
   }
 }
-@media screen and (max-width:1100px) {
-  .event-page .events__body .body__lft .map img {
-    max-width: 380px
-  }
-}
 .event-page .events__notes {
   -webkit-box-shadow: 1px 1px 5px 2px rgba(0,0,0,.07);
   box-shadow: 1px 1px 5px 2px rgba(0,0,0,.07);
@@ -2097,10 +2100,8 @@ main {
 }
 @media screen and (max-width:870px) {
   .event-page .events__item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
   }
 }
 @media screen and (max-width:576px) {
@@ -2129,7 +2130,8 @@ main {
 .event-page .events__item .item__price strong {
   font-size: 27px;
   font-weight: 600;
-  color: var(--black)
+  color: var(--black);
+  white-space: nowrap
 }
 .event-page .events__item .item__tickets {
   display: -webkit-box;
@@ -2599,17 +2601,17 @@ main {
   gap: 10px
 }
 .checkout-page .checkout__form .time span {
-  max-width: 244px
-}
-@media screen and (max-width:429px) {
-  .checkout-page .checkout__form .time span {
-    max-width: 130px
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
 }
 .checkout-page .checkout__form .time .flipdown {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  min-width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2650,6 +2652,11 @@ main {
 }
 .checkout-page .checkout__form .time .flipdown.flipdown__theme-light .rotor-leaf-front {
   background: #f6f6f6
+}
+@media screen and (max-width:550px) {
+  .checkout-page .checkout__form .time .flipdown {
+    min-width: 150px
+  }
 }
 .checkout-page .checkout__form .form__rht {
   max-width: 495px;
